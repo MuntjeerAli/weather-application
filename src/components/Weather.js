@@ -15,7 +15,6 @@ const Weather = () => {
         const resJson = response.json();
         setCity(resJson.main);
        }
-       
         fetchApi();
     }, [search] )
     return(
@@ -29,7 +28,7 @@ const Weather = () => {
                 </div>
             </div>
             {!city ? (
-                <p> No Data Found</p>
+                <p className="msg"> No Data Found</p>
             ) : (
                 <div>
                      <div className="info">
