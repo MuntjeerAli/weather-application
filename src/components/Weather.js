@@ -14,7 +14,7 @@ const Weather = () => {
         const response = await fetch(url);
         const resJson = response.json();
         setCity(resJson.main);
-       }
+       };
         fetchApi();
     }, [search] )
     return(
